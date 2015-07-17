@@ -15,7 +15,7 @@
                     <rect key="frame" x="8" y="8" width="464" height="464"/>
                     <string key="text">WHAT COLOUR
 IS IT ?</string>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="60"/>
                     <color key="textColor" red="1" green="0.43424561653831506" blue="0.42732827625105108" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
