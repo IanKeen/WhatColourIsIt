@@ -12,7 +12,6 @@
 
 @implementation ClockView
 -(void)drawRect:(CGRect)drawingRect {
-    NSLog(@"redraw");
     CGRect rect = self.bounds;
     CGRect innerRect = CGRectInset(rect, 1.0, 1.0);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
