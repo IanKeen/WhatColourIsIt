@@ -33,17 +33,25 @@
 -(void)stopUpdates {
     [self.timer invalidate];
 }
+-(void)timeTravelWithOffset:(NSTimeInterval)interval {
+    NSDate *date = [[NSDate date] dateByAddingTimeInterval:interval];
+    [self sendData:date];
+}
 
 #pragma mark - Private
 -(void)sendData {
+    NSDate *date = [NSDate date];
+    [self sendData:date];
+}
+-(void)sendData:(NSDate *)date {
     if (self.didUpdate == nil) { return; }
     
-    NSDate *date = [NSDate date];
     NSString *dateString = [self stringForDate:date];
     NSString *hexString = [self hexStringFromDateString:dateString];
     UIColor *color = [self colourFromHexString:hexString];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
     
-    self.didUpdate(dateString, hexString, color);
+    self.didUpdate(dateString, hexString, color, components.hour, components.minute);
 }
 -(NSString *)stringForDate:(NSDate *)date {
     static dispatch_once_t onceToken;

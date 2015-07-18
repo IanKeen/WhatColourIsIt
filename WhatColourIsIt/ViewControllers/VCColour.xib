@@ -9,6 +9,8 @@
             <connections>
                 <outlet property="hexLabel" destination="Ic8-V7-AH9" id="RMc-Vy-g9z"/>
                 <outlet property="timeLabel" destination="sBU-df-SOx" id="CRg-3O-9CM"/>
+                <outlet property="timeView" destination="LIM-MG-5Pu" id="beo-mO-VO1"/>
+                <outlet property="timeViewConstraint" destination="Dt6-Bi-QgT" id="cWQ-2Q-od2"/>
                 <outlet property="view" destination="iN0-l3-epB" id="TDu-P6-B8E"/>
             </connections>
         </placeholder>
@@ -50,11 +52,22 @@
                         <constraint firstAttribute="trailing" secondItem="Ic8-V7-AH9" secondAttribute="trailing" constant="8" id="vIq-cJ-iDE"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIM-MG-5Pu" customClass="ClockView">
+                    <rect key="frame" x="275" y="520" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="5nc-CD-SGQ"/>
+                        <constraint firstAttribute="height" constant="50" id="CBn-nB-FDM"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="LIM-MG-5Pu" secondAttribute="bottom" constant="30" id="3Rb-QQ-MKv"/>
                 <constraint firstAttribute="centerY" secondItem="Tix-hv-aJj" secondAttribute="centerY" id="5f6-qz-lxK"/>
                 <constraint firstAttribute="trailing" secondItem="Tix-hv-aJj" secondAttribute="trailing" id="6uJ-NX-85i"/>
+                <constraint firstAttribute="centerX" secondItem="LIM-MG-5Pu" secondAttribute="centerX" id="Dt6-Bi-QgT"/>
                 <constraint firstItem="Tix-hv-aJj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="szW-78-3Ic"/>
             </constraints>
             <point key="canvasLocation" x="267" y="261"/>

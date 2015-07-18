@@ -16,6 +16,7 @@
 		321AAE051B59B76B00C53910 /* VCColourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AAE041B59B76B00C53910 /* VCColourModel.m */; };
 		321AAE081B59B77A00C53910 /* VCColour+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 321AAE071B59B77A00C53910 /* VCColour+Factory.m */; };
 		326B47C81B59C3EF00CC19D7 /* VCColour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326B47C61B59C3AB00CC19D7 /* VCColour.xib */; };
+		327502AA1B5AEA7B00B22C3A /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327502A91B5AEA7B00B22C3A /* ClockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		321AAE061B59B77A00C53910 /* VCColour+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VCColour+Factory.h"; sourceTree = "<group>"; };
 		321AAE071B59B77A00C53910 /* VCColour+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VCColour+Factory.m"; sourceTree = "<group>"; };
 		326B47C61B59C3AB00CC19D7 /* VCColour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCColour.xib; sourceTree = "<group>"; };
+		327502A81B5AEA7B00B22C3A /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		327502A91B5AEA7B00B22C3A /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				326B47C61B59C3AB00CC19D7 /* VCColour.xib */,
 				321AAE031B59B76B00C53910 /* VCColourModel.h */,
 				321AAE041B59B76B00C53910 /* VCColourModel.m */,
+				327502A81B5AEA7B00B22C3A /* ClockView.h */,
+				327502A91B5AEA7B00B22C3A /* ClockView.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				321AAE051B59B76B00C53910 /* VCColourModel.m in Sources */,
 				321AAE081B59B77A00C53910 /* VCColour+Factory.m in Sources */,
 				321AADDB1B59B61300C53910 /* AppDelegate.m in Sources */,
+				327502AA1B5AEA7B00B22C3A /* ClockView.m in Sources */,
 				321AADD81B59B61300C53910 /* main.m in Sources */,
 				321AAE011B59B75800C53910 /* VCColour.m in Sources */,
 			);
