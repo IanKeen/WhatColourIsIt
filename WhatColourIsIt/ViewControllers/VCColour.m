@@ -82,7 +82,7 @@
     CGFloat maxDelta = (CGRectGetWidth(self.view.bounds) / 2.0) - CGRectGetWidth(self.timeView.bounds) - 20.0f;
     
     CGPoint point = [gesture translationInView:self.view];
-    CGFloat delta = (point.x * -1);
+    CGFloat delta = point.x;
     
     if (abs((int)delta) < (int)maxDelta) {
         CGFloat percentage = (delta / maxDelta) * 100.0;
@@ -90,7 +90,7 @@
         NSTimeInterval windowRange = (60 * 60 * 13); //13 hour window to allow some overlap on the edges
         NSTimeInterval timeOffset = windowRange * (percentage / 100.0);
         
-        self.timeViewConstraint.constant = delta;
+        self.timeViewConstraint.constant = (delta * -1);
         [self.model timeTravelWithOffset:timeOffset];
     }
 }
