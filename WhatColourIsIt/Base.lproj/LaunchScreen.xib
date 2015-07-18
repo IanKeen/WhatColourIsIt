@@ -16,11 +16,11 @@
                     <string key="text">WHAT COLOUR
 IS IT ?</string>
                     <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="60"/>
-                    <color key="textColor" red="1" green="0.43424561653831506" blue="0.42732827625105108" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.86274509803921573" green="0.83137254901960789" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.14880607926900261" blue="0.35381155303030298" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.13510724901257437" green="0.18962728227038037" blue="0.31964660390671418" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2W0-qa-dmi"/>
                 <constraint firstAttribute="bottom" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="8" id="Ela-yp-mVA"/>
