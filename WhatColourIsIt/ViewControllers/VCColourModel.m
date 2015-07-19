@@ -63,7 +63,31 @@
     return [formatter stringFromDate:date];
 }
 -(NSString *)hexStringFromDateString:(NSString *)dateString {
-    return [@"#" stringByAppendingString:[dateString stringByReplacingOccurrencesOfString:@" : " withString:@""]];
+    //This will do a straight conversion of time to colour as a hex string and matches the website behaviour
+    //NSString *hexString = [dateString stringByReplacingOccurrencesOfString:@" : " withString:@""];
+    
+    //I've written a couple of variants here to introduce more colour into the app
+    NSMutableArray *components = [NSMutableArray arrayWithArray:[dateString componentsSeparatedByString:@" : "]];
+    
+    //this was my first attempt just using some randomly chosen values
+    /*if ([components.firstObject integerValue] > 12) {
+        components[0] = [@[@"A1", @"B2"] objectAtIndex:[[components.firstObject substringToIndex:1] integerValue] - 1];
+        
+    } else {
+        components[1] = [@[@"1A", @"2B", @"3C", @"4D", @"5E", @"6F", @"A1", @"B2", @"C3", @"D4"]
+                         objectAtIndex:[[components[1] substringToIndex:1] integerValue]];
+    }*/
+    
+    //this uses a mapping to change the numbers 1-6 to their respective alpha, I kinda like this one so far
+    //it adds a huge range of colours
+    NSDictionary *changes = @{@"1": @"A", @"2": @"B", @"3": @"C", @"4": @"D", @"5": @"E", @"6": @"F"};
+    for (NSInteger index = 0; index < components.count; index++) {
+        [changes enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *obj, BOOL *stop) {
+            components[index] = [components[index] stringByReplacingOccurrencesOfString:key withString:obj];
+        }];
+    }
+    NSString *hexString = [[components componentsJoinedByString:@" : "] stringByReplacingOccurrencesOfString:@" : " withString:@""];
+    return [@"#" stringByAppendingString:hexString];
 }
 -(UIColor *)colourFromHexString:(NSString *)hex {
     unsigned result = 0;
