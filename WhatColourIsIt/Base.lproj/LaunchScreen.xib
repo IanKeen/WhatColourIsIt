@@ -20,7 +20,7 @@ IS IT ?</string>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.13510724901257437" green="0.18962728227038037" blue="0.31964660390671418" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.18823529411764706" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2W0-qa-dmi"/>
                 <constraint firstAttribute="bottom" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="8" id="Ela-yp-mVA"/>
